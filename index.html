@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Blackjack Game</title>
+</head>
+
+
+<body>
+
+    <header>
+        <h1>Blackjack Game</h1>
+    </header>
+
+
+    <div class="container">
+        <img id="card" alt="there should be a card here" src="img_550914.webp">
+        <label for="generateBtn" id="generate">Draw A Card!</label><br>
+        <button type="submit" id="generateBtn" onclick="generateNum()">Draw</button>
+        <p id="result"></p>
+        <button type="submit" id="restartBtn" onclick="resetCode(true)">Restart</button>
+    </div>
+
+
+    <footer>
+        <nav id="footerNav">
+            <p id="outputCard" class="messages">Your Card Is: <span id="draw" class="counters"></span></p>
+            <p id="outputSum" class="messages">Your Hand: <span id="sumOfCards" class="counters"></span></p>
+            <p id="outputDraws" class="messages">Number Of Draws: <span id="draws" class="counters"></span></p>
+        </nav>
+    </footer>
+
+
+    <script src="index.js"></script>
+    <!-- <script src="randomPics.js"></script> -->
+</body>
+</html>
